@@ -1,6 +1,5 @@
-# Configuration for Lock Threads - https://github.com/dessant/lock-threads
+# Configuração para bloqueio de threads - https://github.com/dessant/lock-threads
 
-name: 'Lock Threads'
 
 # By specifying the access of one of the scopes, all of those that are not
 # specified are set to 'none'.
@@ -22,7 +21,7 @@ jobs:
         with:
           process-only: 'issues'
           github-token: ${{ github.token }}
-          # Number of days of inactivity before a closed issue is locked.
+          # Número de dias de inatividade antes que um problema fechado seja bloqueado.
           issue-inactive-days: '14'
           issue-comment: >
             This thread has been automatically locked since there has not been
