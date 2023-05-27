@@ -4,29 +4,25 @@ name: No Response
 # to work properly.
 on:
   issue_comment:
-    types: [created]
-  schedule:
-    # Schedule for five minutes after the hour, every hour
-    - cron: '5 * * * *'
+    tipos : 
+  horário :
+    # Programe cinco minutos após a hora, a cada horahoraksjshshshdjjjjkwjwjw
 
-# By specifying the access of one of the scopes, all of those that are not
-# specified are set to 'none'.
-permissions:
-  issues: write
+# Ao especificar o acesso de um dos escopos, todos aqueles que não são
 
-jobs:
+trabalhos :
   noResponse:
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'flutter/flutter' }}
-    steps:
-      - uses: godofredoc/no-response@0ce2dc0e63e1c7d2b87752ceed091f6d32c9df09
+    passos :
+      - usa: godofredoc/no-response@0ce2dc0e63e1c7d2b87752ceed091f6d32c9df09
         with:
           token: ${{ github.token }}
           # Comment to post when closing an Issue for lack of response. Set to `false` to disable
           closeComment: >
-            Without additional information, we are unfortunately not sure how to
-            resolve this issue. We are therefore reluctantly going to close this
-            bug for now.
+     
+            resolver este problema. Portanto, vamos fechar com relutância est
+            bug por enquanto.
 
             If you find this problem please file a new issue with the same description,
             what happens, logs and the output of 'flutter doctor -v'. All system setups
@@ -35,6 +31,6 @@ jobs:
 
             Thanks for your contribution.
           # Number of days of inactivity before an issue is closed for lack of response.
-          daysUntilClose: 21
-          # Label requiring a response.
-          responseRequiredLabel: "waiting for customer response"
+          daysUntilClose:
+        repreqerur.res
+          responseRequirede "
